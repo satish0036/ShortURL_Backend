@@ -6,7 +6,7 @@ const options = {
 const connectToMongoDb=(url)=>{
 mongoose.connect(url)
 .then(()=>console.log("connected to DB"))
-.catch(()=>console.log("error while connecting with Db"))
+.catch((err)=>console.log(`error while connecting with Db ${err}`))
 }
 
 module.exports = connectToMongoDb;
