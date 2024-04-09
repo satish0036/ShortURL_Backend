@@ -1,0 +1,8 @@
+
+
+POST  /url ->get the url and make a short url and return 
+that shorter url like google.com/shhortcode
+
+GET url/:shortcode ->redirect to original url
+
+GET url/analytics/:id ->give analytics of respected id
