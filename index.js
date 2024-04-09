@@ -4,13 +4,14 @@ const connectToMongoDb =require("./connection.js")
 const urlRoutes=require("./routes/urlRouters.js")
 const dotenv=require("dotenv")
 const cors=require("cors")
-dotenv.config();
+
 
 connectToMongoDb(process.env.DB_DATABASE)
 const app=express()
+dotenv.config();
 
 app.use(cors({
-    origin: ['http://localhost:3000','https://shorturl.indiaarticle24.com/'],
+    origin: ['http://localhost:3000','https://shorturl.indiaarticle24.com'],
     credentials: true,
   }));
 
