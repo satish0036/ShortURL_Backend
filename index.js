@@ -10,7 +10,7 @@ connectToMongoDb(process.env.DB_DATABASE)
 const app=express()
 
 app.use(cors({
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000','https://shorturl.indiaarticle24.com/'],
     credentials: true,
   }));
 
